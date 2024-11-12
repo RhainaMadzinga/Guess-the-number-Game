@@ -1,0 +1,33 @@
+<RhainaMadzinga html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Number Game</title>
+  <link rel="stylesheet" href="rm828.css">
+</head>
+<body>
+  <h1>The Number Game</h1>
+  <p>Select a range of numbers</p>
+  <input type="radio" id="range10" name="numberRange" value="10">
+  <label for="range10">10</label>
+  <input type="radio" id="range100" name="numberRange" value="100">
+  <label for="range100">100</label>
+  <input type="radio" id="range1000" name="numberRange" value="1000">
+  <label for="range1000">1000</label>
+  <br>
+  <button id="startButton" disabled>Start</button>
+
+  <div id="gameContainer" style="display: none;">
+    <p>Guess the number between 1 and <span id="maxNumber"></span></p>
+    <input type="number" id="userGuess" min="1">
+    <button id="checkButton">Check</button>
+    <p>Guesses left: <span id="guessesLeft"></span></p>
+    <div id="guessList">
+      <p>Guesses:</p>
+    </div>
+  </div>
+
+  <script src="rm828.js"></script>
+</body>
+</html>
